@@ -2,7 +2,7 @@
 
 ## Setup the Django application
 
- * Create virtual environment
+ * Create the project directory and setup the virtual environment
 ```
 $ mkdir ShieldUIApp && cd ShieldUIApp
 $ virtualenv env
@@ -21,7 +21,7 @@ $ git clone https://github.com/shieldui/django-shieldui-integration
 $ ./env/bin/python manage.py makemigrations
 $ ./env/bin/python manage.py migrate
 ```
-	* Seed the database
+ * Seed the database
 ```
 $ ./env/bin/python manage.py loaddata seed.json
 ```
@@ -30,7 +30,7 @@ $ ./env/bin/python manage.py loaddata seed.json
 $ ./env/bin/python manage.py runserver
 ```
 
-Visit http://localhost:8000/books/ to test that the [Shield UI jQuery Grid Component](https://www.shieldui.com/products/grid) integration works properly.
+Visit [http://localhost:8000/books/](http://localhost:8000/books/) to test that the [Shield UI jQuery Grid Component](https://www.shieldui.com/products/grid) integration works properly.
 
 ## License Information
 
