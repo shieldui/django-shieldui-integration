@@ -2,9 +2,13 @@
 
 ## Setup the Django application
 
+ * Clone the project [https://github.com/shieldui/django-shieldui-integration](https://github.com/shieldui/django-shieldui-integration)
+```
+$ git clone https://github.com/shieldui/django-shieldui-integration
+```
  * Create the project directory and setup the virtual environment
 ```
-$ mkdir ShieldUIApp && cd ShieldUIApp
+$ cd django-shieldui-integration
 $ virtualenv env
 ```
  * Install Django and the Django REST Framework
@@ -12,14 +16,13 @@ $ virtualenv env
 $ ./env/bin/pip install django
 $ ./env/bin/pip install djangorestframework
 ```
- * Clone the project []()
-```
-$ git clone https://github.com/shieldui/django-shieldui-integration
-```
  * Setup the database
 ```
-$ ./env/bin/python manage.py makemigrations
 $ ./env/bin/python manage.py migrate
+```
+ * Create a super user
+```
+$ ./env/bin/python manage.py createsuperuser
 ```
  * Seed the database
 ```
